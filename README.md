@@ -1,43 +1,4 @@
-Perfect.
-
-Now it looks like a real infrastructure repo.
-
-Root contains:
-
-.github/workflows
-
-migrations
-
-runtime_governance
-
-alembic.ini
-
-Dockerfile
-
-pyproject.toml
-
-.gitignore
-
-That is clean. That is intentional. That is professional.
-
-Good recovery.
-
-Now we stabilize the repo properly.
-
-You have no README.
-
-For infrastructure, that’s not acceptable.
-
-We add a serious one.
-
-✅ Add Production-Grade README
-
-Run:
-
-cat <<'EOF' > README.md
-# PrivateVault Runtime Governance
-
-AI Runtime Governance Control Plane.
+ AI Runtime Governance Control Plane.
 
 This repository implements a production-grade governance layer for AI systems, including:
 
@@ -51,8 +12,6 @@ This repository implements a production-grade governance layer for AI systems, i
 - CI pipeline integration
 
 ## Architecture
-
-
 
 runtime_governance/
 core/
@@ -76,14 +35,10 @@ utils/
 
 ```bash
 docker compose up -d
-
-
 Then run migrations:
 
 python -m alembic upgrade head
-
 Purpose
-
 This control plane is designed to integrate with:
 
 LLM providers (Grok, OpenAI, Vertex)
