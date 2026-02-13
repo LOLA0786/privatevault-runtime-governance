@@ -1,0 +1,18 @@
+[project]
+name = "privatevault-runtime-governance"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "alembic",
+    "pydantic",
+    "grpcio",
+    "grpcio-tools",
+    "cryptography"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

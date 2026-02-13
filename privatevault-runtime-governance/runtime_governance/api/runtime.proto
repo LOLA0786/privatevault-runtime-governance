@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service RuntimeGovernance {
+  rpc Evaluate (EvaluationRequest) returns (EvaluationResponse);
+}
+
+message EvaluationRequest {
+  string prompt = 1;
+  string principal = 2;
+}
+
+message EvaluationResponse {
+  string decision = 1;
+  string event_hash = 2;
+}
